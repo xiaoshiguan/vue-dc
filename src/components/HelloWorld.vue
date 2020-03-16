@@ -1,24 +1,34 @@
 <template>
   <div class="hello">
     <el-row>
-    <el-button>默认按钮</el-button>
-    <el-button type="primary">主要按钮</el-button>
-    <el-button type="success">成功按钮</el-button>
-    <el-button type="info">信息按钮</el-button>
-    <el-button type="warning">警告按钮</el-button>
-    <el-button type="danger">危险按钮</el-button>
-  </el-row>
-  <router-link to="/demo"><i class="fa fa-home"></i>后台首页</router-link>
+      <el-button>默认按钮</el-button>
+      <el-button type="primary">主要按钮</el-button>
+      <el-button type="success">成功按钮</el-button>
+      <el-button type="info">信息按钮</el-button>
+      <el-button type="warning">警告按钮</el-button>
+      <el-button type="danger">危险按钮</el-button>
+    </el-row>
+    <router-link to="/demo">
+      <i class="fa fa-home"></i>后台首页
+    </router-link>
+    <br />
+    <router-link to="/valide">
+      <i class="fa fa-home"></i>校验
+    </router-link>
+    <br />
+    <router-link to="/table">
+      <i class="fa fa-home"></i>校验
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
